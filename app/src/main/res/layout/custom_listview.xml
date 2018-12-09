@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/sosImage_ImgV"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/sos"
+        android:layout_alignParentLeft="true"
+        android:paddingRight="15dp"
+        />
+    <TextView
+        android:id="@+id/sosPeople"
+        android:layout_toRightOf="@+id/sosImage_ImgV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SOS PEOPLE SEARCH"
+        android:textSize="20dp"
+        android:textColor="#ff0000"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
+        />
+
+    <TextView
+        android:id="@+id/lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sosPeople"
+        android:paddingRight="7dp"
+        android:text="lat = 192.03984829"
+        android:layout_toRightOf="@+id/sosImage_ImgV"
+        />
+
+    <TextView
+        android:id="@+id/lng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sosPeople"
+        android:text="lat = 192.03984829"
+        android:paddingRight="7dp"
+        android:layout_toRightOf="@+id/lat"
+        />
+
+    <TextView
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sosPeople"
+        android:text="lat = 17khm"
+        android:layout_toRightOf="@+id/lng"
+        />
+
+
+    <TextView
+        android:id="@+id/sosPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/sosPeople"
+        android:text="70%"
+        android:textSize="20dp"
+        android:textColor="#ff0000"
+        android:paddingTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/sosPercent"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:text="15:35"
+        android:textSize="20dp"
+        android:textColor="#0008ff"
+        android:paddingTop="15dp"
+        />
+
+
+
+</RelativeLayout>

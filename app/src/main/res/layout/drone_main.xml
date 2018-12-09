@@ -3,16 +3,28 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent" android:orientation="vertical">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deep-Learning People Search"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:gravity="center">
         <Button
-            android:text="start"
+            android:text="Search Model Start"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/start_btn"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/button_design"
             android:layout_alignParentLeft="true"/>
 
         <Button
@@ -21,17 +33,25 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="96dp"
-            android:text="stop" />
+            android:background="@drawable/button_design"
+            android:text="Search Model Stop" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/searchTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:text="basic"
+        android:textColor="#011564"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
         />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
 
 
 </LinearLayout>

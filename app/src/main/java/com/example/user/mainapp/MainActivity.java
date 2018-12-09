@@ -100,17 +100,6 @@ public class MainActivity extends AppCompatActivity
 
             manager.beginTransaction().replace(R.id.content_main, VideoMain.getInstance()).commit();
             VideoMain.getInstance().setContext(this);
-        } else if (id == R.id.nav_slideshow) {
-            manager.beginTransaction().replace(R.id.content_main, GoogleMain.getInstance()).commit();
-            GoogleMain.getInstance().setContext(this);
-            // Handle the camera action
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

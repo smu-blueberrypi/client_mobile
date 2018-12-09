@@ -9,13 +9,11 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import org.videolan.libvlc.IVLCVout;
 import org.videolan.libvlc.LibVLC;
@@ -36,6 +34,7 @@ public class VideoMain extends Fragment implements IVLCVout.Callback {
     private int mVideoWidth;
     private int mVideoHeight;
     private Context context;
+
 
     @SuppressLint("ValidFragment")
     private VideoMain() {
